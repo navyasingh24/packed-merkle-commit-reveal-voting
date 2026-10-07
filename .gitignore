@@ -1,0 +1,8 @@
+node_modules/
+compiled*.json
+*_results.json
+*_result.json
+test_results.json
+.DS_Store
+figures/
+finalResults_bc.zip

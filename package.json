@@ -1,0 +1,33 @@
+{
+  "name": "voting-gas-benchmark-final",
+  "version": "1.0.0",
+  "description": "Reproducible gas/calldata/latency benchmarks: proposed (Merkle-eligibility, storage-packed) commit-reveal contract vs. naive baseline, plus ZKP/ring/mixnet primitive cross-checks",
+  "scripts": {
+    "compile": "node compile.js",
+    "measure": "node measure.js",
+    "scale": "node scale.js",
+    "compile-bench": "node compile_bench.js",
+    "bench": "node measure_bench.js",
+    "calldata": "node calldata_size.js",
+    "latency": "node latency_scale.js all",
+    "latency-cr": "node latency_scale.js cr",
+    "latency-ec": "node latency_scale.js ec",
+    "latency-mix": "node latency_scale.js mix",
+    "compile-variants": "node compile_variants.js",
+    "compile-ablation": "node compile_ablation.js",
+    "candidate": "node measure_candidate.js",
+    "measure-variants": "node measure_variants.js",
+    "v2-n1000": "node measure_v2_n1000.js",
+    "calldata-v2": "node calldata_v2.js",
+    "ablation": "node measure_ablation.js",
+    "latency-v2": "node latency_v2.js",
+    "test-security": "node test_security.js",
+    "figures": "node make_figures.js",
+    "results-zip": "node pack_results.js"
+  },
+  "dependencies": {
+    "solc": "0.8.20",
+    "ganache": "^7",
+    "ethers": "^6"
+  }
+}
